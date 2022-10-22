@@ -20,7 +20,7 @@ public class InvoiceRestController {
         return invoiceService.getInvoce(invoiceId);
     }
 
-    @GetMapping(path = "/invoices/{customerId}")
+    @GetMapping(path = "/invoicesByCustomer/{customerId}")
     public List<InvoiceResponseDTO> getInvoicesByCustomer(@PathVariable String customerId) {
         return invoiceService.invoicesByCustomerId(customerId);
     }
